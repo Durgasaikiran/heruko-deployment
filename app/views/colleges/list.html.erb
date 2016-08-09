@@ -1,0 +1,16 @@
+<table border ="1" width="50" cellpadding="5" > 
+<tr>
+<th>fullname</th>
+<th>age</th>
+<th>department</th>
+<th>year></th>
+</tr>
+<%= @col.each do |t| %>
+<tr>
+<th>full name:<%= t.fullname%></th></br>
+<th>age:<%= t.age %></th></br>
+<th>department:<%= t.department %></th></br>
+<th>year:<%= t.year %></th></br>
+</tr>
+</table>
+<%end%>

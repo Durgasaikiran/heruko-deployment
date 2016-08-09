@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>employees</title>
+  <%= stylesheet_link_tag 'application',media:'all','data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application','data-turbolinks-track'=> true %>
+  
+</head>
+<body>
+<table border="1" align="center" width="50%">
+	<tr>
+	 <td colspan="2" align="center">EMPLOYEES DETAILS </td>  
+    </tr>
+<%= form_tag employees_show_path do %>
+<tr>
+  <td>Name:</td>  <td><%= text_field_tag 'name' %></td>
+ </tr>
+ <tr>
+  <td>Age:</td><td><%= text_field_tag  'age'%></td>
+ </tr>
+ <tr>
+  <td>address:</td><td><%= text_field_tag 'address'%></td>
+</tr>
+<tr>
+  <td colspan="2" align="center"><%= button_tag 'submit'%></td>
+</tr>
+<%end%>
+</table>
+
+

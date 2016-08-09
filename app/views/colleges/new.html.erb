@@ -1,0 +1,7 @@
+<%= form_for @col,url: {action:"show"} do |f| %>
+Full name: <%= f.text_field :fullname %></br>
+Age:<%= f.text_field :age %></br>
+Department: <%=f.text_field :department %></br>
+Year:<%= f.text_field :year %><br/>
+<%= f.submit %>
+<% end %> 
