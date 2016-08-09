@@ -37,7 +37,7 @@ group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
 end
-group :development do 
+group :production do 
 	gem 'pg'
 end	
 group :development do
